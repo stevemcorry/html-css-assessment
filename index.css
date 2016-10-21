@@ -1,0 +1,64 @@
+body{
+  background-image: url(/img/main-bg.jpeg);
+  background-size: cover;
+  height: 96vh;
+}
+header div{
+  font-size: 40px;
+  color: white;
+  font-family: sans-serif;
+}
+header{
+  display: flex;
+  justify-content: space-around;
+}
+header .menu{
+  display: none;
+  height: 25px;
+  width: 25px;
+  background-image: url('https://cdn4.iconfinder.com/data/icons/tupix-1/30/list-512.png');
+  background-size: contain;
+}
+header .social{
+  display: none;
+}
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+}
+.name{
+  align-self: center;
+  font-size: 50px;
+  color: white;
+  font-family: monospace;
+  text-align: center;
+}
+.me{
+  font-size: 60px
+}
+footer{
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 700px) {
+    header .home,header .about,header .story{
+      display: none;
+    }
+    header{
+      justify-content: space-between;
+      margin: 0 15px 0 15px
+    }
+    header .menu, header .social{
+      display: inline;
+      height: 50px;
+      width: 50px;
+    }
+    header .social{
+      display: flex;
+    }
+    .tweet{
+      margin-right: 15px;
+    }
+}
